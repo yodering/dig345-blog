@@ -1,0 +1,226 @@
+---
+title: 'DevLog 2-3: Building an Astro Blog'
+description: 'Following the Astro Build a Blog tutorial to create a modular, component-based website'
+pubDate: '2026-02-02'
+heroImage: '../../assets/blog-placeholder-1.jpg'
+---
+
+import Counter from '../../components/Counter';
+
+# DevLog 2-3: Create an Astro Blog Site
+
+This DevLog documents my journey following Astro's Build a Blog tutorial to create a modular website using component-based design.
+
+## Objective 1: Create a new Astro site and publish it on Netlify
+
+The command to create a new Astro site:
+
+```bash
+npm create astro@latest
+```
+
+After running this command, I selected the blog template which set up the initial project structure with pages, components, and sample blog posts.
+
+**Netlify Deployment URL:** ✏️ _[Add your Netlify URL here after deployment]_
+
+---
+
+## Objective 2: Create pages (.astro files) and blog posts (.md files)
+
+### Pages Created
+- [index.astro](src/pages/index.astro) - Homepage
+- [about.astro](src/pages/about.astro) - About page
+- [blog/index.astro](src/pages/blog/index.astro) - Blog listing page
+- [blog/[...slug].astro](src/pages/blog/[...slug].astro) - Dynamic blog post pages
+
+### Blog Posts with Frontmatter
+All blog posts are located in `src/content/blog/` and use frontmatter for metadata:
+
+```markdown
+---
+title: 'Post Title'
+description: 'Post description'
+pubDate: 'Jul 08 2022'
+heroImage: '../../assets/blog-placeholder-1.jpg'
+---
+```
+
+The frontmatter includes:
+- `title`: The post title
+- `description`: SEO description
+- `pubDate`: Publication date
+- `heroImage`: Featured image path
+
+---
+
+## Objective 3: Use Astro components to reuse common code
+
+I've created reusable components in `src/components/`:
+
+- [Header.astro](src/components/Header.astro) - Site header with navigation
+- [Footer.astro](src/components/Footer.astro) - Site footer
+- [HeaderLink.astro](src/components/HeaderLink.astro) - Navigation link component
+- [FormattedDate.astro](src/components/FormattedDate.astro) - Date formatting component
+- [BaseHead.astro](src/components/BaseHead.astro) - HTML head meta tags
+
+These components are imported and used across multiple pages, demonstrating the DRY (Don't Repeat Yourself) principle.
+
+---
+
+## Objective 4: Create reusable layout components using `<slot />` and `Astro.props`
+
+The [BlogPost.astro](src/layouts/BlogPost.astro) layout demonstrates both concepts:
+
+### Using `<slot />`
+The `<slot />` element allows child content to be injected into the layout:
+
+```astro
+<main>
+  <article>
+    <slot />
+  </article>
+</main>
+```
+
+### Using `Astro.props`
+Props are passed to the layout and accessed via `Astro.props`:
+
+```astro
+---
+const { title, description, pubDate, heroImage } = Astro.props;
+---
+```
+
+This allows each blog post to customize the layout with its own metadata while maintaining a consistent structure.
+
+---
+
+## Objective 5: Challenges and Difficulties
+
+✏️ _Share anything that was difficult so far:_
+
+[Add your experiences here - what concepts were tricky? What took time to understand? What bugs did you encounter?]
+
+---
+
+## Objective 6: Display a dynamically generated list of posts
+
+The [blog/index.astro](src/pages/blog/index.astro) page uses Astro's Content Collections API to fetch and display all blog posts:
+
+```astro
+---
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+```
+
+This dynamically generates the blog listing page with all posts sorted by date.
+
+---
+
+## Objective 7: Dynamic page routing with `getStaticPaths()`
+
+The [blog/[...slug].astro](src/pages/blog/[...slug].astro) file uses dynamic routing:
+
+```astro
+---
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+---
+```
+
+This function:
+1. Runs at build time
+2. Fetches all blog posts
+3. Generates a static route for each post
+4. Passes post data as props to the page
+
+---
+
+## Objective 8: Install Astro Preact integration
+
+Install the Preact integration:
+
+```bash
+npx astro add preact
+```
+
+This command automatically:
+- Installs the necessary packages
+- Updates `astro.config.mjs` with the integration
+- Configures the project to use Preact components
+
+### Client Directive for Hydration
+
+Client directives control when and how components are hydrated:
+
+- `client:load` - Hydrate immediately on page load
+- `client:idle` - Hydrate when the browser is idle
+- `client:visible` - Hydrate when the component is visible
+- `client:media` - Hydrate based on media query
+- `client:only` - Skip server-side rendering
+
+Example usage:
+```astro
+<InteractiveComponent client:load />
+```
+
+### Interactive Preact Counter Demo
+
+Here's a live example of a Preact component with client-side hydration:
+
+<Counter client:load initialCount={5} title="DevLog Counter" />
+
+This counter component demonstrates:
+- **State management** using Preact's `useState` hook
+- **Event handling** with onClick handlers
+- **Client-side interactivity** via the `client:load` directive
+- **Props passing** from the parent to the component
+
+The component is defined in [Counter.tsx](src/components/Counter.tsx) and imported into this MDX file, showing how you can mix interactive components with static markdown content.
+
+---
+
+## Objective 9: Modify site design as if transitioning from WordPress
+
+✏️ _Document your design modifications:_
+
+[Describe how you modified the design and content. What WordPress-like features did you recreate? What design elements did you customize?]
+
+### Design Changes Made:
+- [ ] Updated color scheme
+- [ ] Modified typography
+- [ ] Customized header/navigation
+- [ ] Updated footer content
+- [ ] Added custom blog post styling
+- [ ] Created custom homepage layout
+
+---
+
+## Conclusion
+
+This project demonstrated the power of Astro's component-based architecture. Key takeaways:
+
+1. **File-based routing** makes creating pages intuitive
+2. **Component reusability** keeps code DRY and maintainable
+3. **Content Collections** provide type-safe content management
+4. **Islands Architecture** with client directives optimizes performance
+5. **MDX support** allows mixing markdown with components
+
+**Final Deployment URL:** ✏️ _[Add your final Netlify URL here]_
+
+---
+
+## Resources
+
+- [Astro Documentation](https://docs.astro.build)
+- [Build a Blog Tutorial](https://docs.astro.build/en/tutorial/0-introduction/)
+- [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/)
+- [Preact Integration](https://docs.astro.build/en/guides/integrations-guide/preact/)
