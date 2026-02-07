@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "devlog": "node scripts/create-devlog.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
