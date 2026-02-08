@@ -8,11 +8,12 @@
   publish = "dist"
 
   # Build command
-  command = "npm run build"
+  command = "bun run build"
 
 [build.environment]
-  # Node version
-  NODE_VERSION = "20"
+  # Bun will be automatically detected from bun.lockb
+  # You can specify a version if needed:
+  # BUN_VERSION = "1.2"
 
 # Redirect rules (optional - for SPA-like behavior)
 [[redirects]]

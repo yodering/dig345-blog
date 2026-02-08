@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import Counter from '../components/Counter';
+import CodeAnimation from '../components/CodeAnimation';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -14,8 +14,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>Hi</h1>
-			<Counter client:load initialCount={0} title="Interactive Counter" />
+			<h1>Devlog for DIG 345 Radical Software @ Davidson College</h1>
+			<CodeAnimation client:load />
 		</main>
 		<Footer />
 	</body>

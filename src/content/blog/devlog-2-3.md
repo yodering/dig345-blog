@@ -1,7 +1,7 @@
 ---
 title: 'DevLog 2-3'
 description: 'Create an Astro Blog Site'
-pubDate: '2026-02-03'
+pubDate: '2026-02-02'
 ---
 
 ## Outcomes

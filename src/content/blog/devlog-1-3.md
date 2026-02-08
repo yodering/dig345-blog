@@ -1,7 +1,7 @@
 ---
 title: 'DevLog 1-3'
 description: 'Create a Node.js project and publish it on Github'
-pubDate: '2026-01-03'
+pubDate: '2026-01-30'
 ---
 
 ## Outcomes
