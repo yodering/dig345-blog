@@ -6,11 +6,11 @@ export default function CodeAnimation() {
 	const [phraseIndex, setPhraseIndex] = useState(0);
 
 	const phrases = [
-		'console.log("Welcome to Radical Software");',
-		'git commit -m "learning new things"',
-		'npm install creativity',
-		'const ideas = await brainstorm();',
-		'// Building the future, one line at a time'
+		'console.log("welcome to radical software");',
+		'git commit -m "learning"',
+		'bun install creativity',
+		'const ideas = await();',
+		'// i dont know what im doing'
 	];
 
 	useEffect(() => {
@@ -60,7 +60,7 @@ export default function CodeAnimation() {
 			boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
 			maxWidth: '600px',
 			margin: '2rem auto',
-			fontFamily: '"Fira Code", "Courier New", monospace',
+			fontFamily: '"IBM Plex Mono", "Courier New", monospace',
 			minHeight: '100px',
 		}}>
 			<div style={{
