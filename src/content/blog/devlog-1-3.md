@@ -30,27 +30,3 @@ This [Introduction to NPM and Node](link) tutorial builds a foundation for what 
 9. Publish the repo on Github. Add the link ✏️ [HERE](https://github.com/yodering/devlog1_3)
 
 10. Turn it in by posting the Github link in Moodle
-
-
-
-## Context
-
-What ideas resonated with you?
-
-- Citation: Author, Article (year)
-- Summary:
-- Quote:
-- Comment:
-- Question:
-
-
-
-## Tech
-
-What tech did you learn?
-
-- Summary:
-- Alternatives: "An alternative to this method is ______"
-- Link(s) to outcomes:
-- Comments:
-- Questions:

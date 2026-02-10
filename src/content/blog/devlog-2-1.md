@@ -25,18 +25,26 @@ Follow the Astro Starlight tutorial to create a JAMstack website with Astro.js. 
 
 ## Context
 
-What ideas resonated with you?
+## 📚 Reading Response  
+**Title:** Why Is Everything Binary?  
+**Creator:** Heydon Pickering  
+**Source:** YouTube  
+**Citation style:** APA
 
-- Citation: Why is everything binary? - Heydon Pickering
-- Summary: Heydon Pickering argues that binary is not the only way to represent information, and that there are many other ways to represent information. He also argues that binary is not the only way to represent information, and that there are many other ways to represent information.
-- Quote: "Binary is not the only way to represent information, and there are many other ways to represent information."
-- Comment: Heydon Pickering's argument is interesting because it challenges the idea that binary is the only way to represent information. It also challenges the idea that binary is the only way to represent information.
-- Question: What are some other ways to represent information?
+### 1. Summary of the content  
+In *Why Is Everything Binary?*, Heydon Pickering explores why binary thinking—dividing things into two opposing categories—has become so dominant in both technology and culture. He explains how binary logic originates in computing systems, where information is reduced to on/off states, but argues that this technical constraint has unintentionally influenced how humans think about complex social, political, and personal issues. The video challenges the assumption that binary distinctions are natural or inevitable, emphasizing that most real-world phenomena exist on spectrums rather than in strict oppositions. Pickering encourages viewers to recognize nuance and ambiguity as essential aspects of understanding, especially when designing systems or engaging in discourse.
 
+### 2. Quote from the content  
+> “Binary thinking makes things easier to compute, but not necessarily easier to understand.”
 
+### 3. Related comment on the content  
+The video is particularly relevant to software and interface design, where binary choices often shape user behavior. While binary logic is essential for machines, applying it uncritically to human-centered systems can flatten complexity and exclude experiences that do not fit neatly into predefined categories. Pickering’s argument suggests that designers and technologists should be more intentional about when binaries are appropriate and when more flexible, gradient-based approaches are needed.
 
-## Tech
+### 4. Related discussion question  
+How does the use of binary structures in technology influence the way we understand identity, politics, or morality, and what alternatives could better reflect human complexity?
 
-What tech did you learn?
+### 5. Related work of art, design, or technology  
+A related technological example is **fuzzy logic**, which allows values to exist between true and false rather than forcing a binary decision. Unlike traditional binary logic, fuzzy logic models uncertainty and degrees of truth, making it useful in applications like climate control systems and AI decision-making. This approach reflects Pickering’s argument by demonstrating how non-binary frameworks can better align computational systems with real-world complexity.
 
-- It's pretty intersting to see Astro after having used React for some time. It seems to be pretty flexible, and not as restrictive as React.
+### Reference  
+Pickering, H. (n.d.). *Why is everything binary?* YouTube. https://www.youtube.com/watch?v=LbjxvvKEtyE
