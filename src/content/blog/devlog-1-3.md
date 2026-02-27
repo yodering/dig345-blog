@@ -27,6 +27,6 @@ This [Introduction to NPM and Node](link) tutorial builds a foundation for what 
 
 8. Create a Git repo and commit a `.gitignore` file
 
-9. Publish the repo on Github. Add the link ✏️ [HERE](https://github.com/yodering/devlog1_3)
+9. Publish the repo on Github. Add the link ✏️ [HERE](https://github.com/yodering/devlog1-3)
 
 10. Turn it in by posting the Github link in Moodle
