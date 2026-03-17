@@ -12,14 +12,18 @@ Complete the Strudel First Sounds tutorial. Post a link to your finished REPL âœ
   height="400" 
   frameborder="0"
 />
+
 Complete the Strudel First Notes tutorial. Post a link to your finished REPL
+
 <iframe 
   src="https://strudel.cc/#Cm4oYDwKW34gMF0gMiBbMCAyXSBbfiAyXQpbfiAwXSAxIFswIDFdIFt%2BIDFdClt%2BIDBdIDMgWzAgM10gW34gM10KW34gMF0gMiBbMCAyXSBbfiAyXQo%2BKjRgKS5zY2FsZSgiQzQ6bWFqb3IiKQouc291bmQoImdtX3N5bnRoX3N0cmluZ3NfMSIp" 
   width="100%" 
   height="400" 
   frameborder="0"
 />
+
 Complete the Strudel First Effects tutorial. Post a link to your finished REPL 
+
 <iframe 
   src="https://strudel.cc/#Cm4oYDwKW34gMF0gMiBbMCAyXSBbfiAyXQpbfiAwXSAxIFswIDFdIFt%2BIDFdClt%2BIDBdIDMgWzAgM10gW34gM10KW34gMF0gMiBbMCAyXSBbfiAyXQo%2BKjRgKS5zY2FsZSgiQzQ6bWFqb3IiKQouc291bmQoImdtX3N5bnRoX3N0cmluZ3NfMSIpLmdhaW4oc2luZSk%3D" 
   width="100%" 
