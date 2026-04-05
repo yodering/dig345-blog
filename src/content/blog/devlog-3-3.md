@@ -12,7 +12,7 @@ Connect to a remote API and use JSON data in a frontend (CWD 9.3)
 Modify the project structure, install dependencies, and run the project. (CWD 9.4)
 Add static and dynamic API routes using Express. (CWD 9.4)
 Create a free Vercel account (CWD 9.4)
-Deploy your project on Vercel. (CWD 9.4) Paste the link ✏️ yoder-bad-password.vercel.app/api
+Deploy your project on Vercel. (CWD 9.4) Paste the link ✏️ [yoder-bad-password.vercel.app/api](https://yoder-bad-password.vercel.app/)
 
 ## 📚 Reading Response  
 **Title:** Hacktivist deletes white supremacist websites live on stage during hacker conference  
