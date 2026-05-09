@@ -20,16 +20,6 @@ MeGPT is finished and live. Most of the full project explanation is already incl
 - Project video: [Here](https://youtu.be/Xw3u4q1_jHo)
 - Final statement: included on the [MeGPT about page](https://yoder.ing/megpt/about)
 
-<object
-  data="/assets/megpt-updated-proposal.pdf"
-  type="application/pdf"
-  width="100%"
-  height="700"
->
-  <p>
-    PDF preview unavailable.
-    <a href="/assets/megpt-updated-proposal.pdf">Download the updated proposal</a>.
-  </p>
-</object>
+<iframe src="/assets/megpt-updated-proposal.pdf" title="Updated MeGPT proposal PDF" width="100%" height="700"></iframe>
 
 For the statement, I focused on explaining both the concept and the technical execution of MeGPT. The about page covers the core idea, how messages are routed, and why the project is built around performance, impersonation, and user expectation.
